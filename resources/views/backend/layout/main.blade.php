@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-    <link href="{{ asset('assets/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('assets/dist/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -242,7 +242,7 @@
     </main>
   </div>
 </div>
-    <script src="{{ asset('assets/dist/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ secure_asset('assets/dist/js/bootstrap.bundle.min.js') }}"></script>
 
     @if(request()->is('product*'))
       <script src="https://cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
