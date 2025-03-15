@@ -7,6 +7,7 @@
     <div class="card mb-3">
         <div class="card-body">
             <h5 class="card-title">Order Code: {{ $order->order_code }}</h5>
+            <span class="my-1">Nama Pemesan : {{ $order->user->name }}</span>
             <p class="text-muted">Total Harga: <strong>Rp{{ number_format($order->total_price, 0, ',', '.') }}</strong></p>
             <p>Status: <span class="badge bg-info">{{ $order->statusPesanan->status }}</span></p>
 
